@@ -65,33 +65,6 @@ Le script effectue les actions suivantes :
    - Vérifie la présence des paires de fichiers (français et anglais) pour chaque ville.
    - Affiche les fichiers manquants.
 
-## Exemple de sortie
-
-\```
-=====================
-Organisation terminée.
-=====================
-Résultats :
----------------------
-Ville : Paris
-  Fichiers en français : 115
-  Fichiers en anglais : 114
----------------------
-...
-
-Récapitulatif des totaux :
-  Fichiers en français : 500
-  Fichiers en anglais : 495
-=====================
-
-Suppression terminée.
-Nombre de dossiers en excédant supprimés : 1953
-
-Vérification des paires de fichiers :
-  hoppy.lechat@epitech.eu_2024_Paris version anglaise manquante
-  prénom.nom@epitech.eu_2024_Toulouse version anglaise manquante
-  ...
-\```
 
 ## Remarques
 
