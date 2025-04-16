@@ -61,7 +61,7 @@ for city in "${!all_cities[@]}"; do
     echo "---------------------"
     echo "Ville : $city"
     echo "  Fichiers en français : ${city_counts_fr[$city]:-0}"
-    echo "  Fichiers en anglais : ${city_counts_en[$city]:-0}"
+    echo "  Fichiers en anglais  : ${city_counts_en[$city]:-0}"
 done
 
 # Afficher le récapitulatif des totaux
