@@ -47,8 +47,17 @@ done
 echo -e "=====================\nOrganisation terminée.\n====================="
 
 # Afficher les résultats
-echo "Résultats :"
+#### Collecter toutes les villes (union des clefs des deux tableaux)
+declare -A all_cities
 for city in "${!city_counts_fr[@]}"; do
+    all_cities[$city]=1
+done
+for city in "${!city_counts_en[@]}"; do
+    all_cities[$city]=1
+done
+#### Afficher les résultats pour chaque ville, même si uniquement FR ou EN
+echo "Résultats :"
+for city in "${!all_cities[@]}"; do
     echo "---------------------"
     echo "Ville : $city"
     echo "  Fichiers en français : ${city_counts_fr[$city]:-0}"
